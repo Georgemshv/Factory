@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>საწვავი</title>
+    <!--Reset default style-->
+    <link rel="stylesheet" href="CSS/reset.css">
+    <!--Fonts-->
+    <link rel="stylesheet" href="CSS/fonts.css">
+    <!--Frequently used class-->
+    <link rel="stylesheet" href="CSS/main.css">
+    <!--Main style-->
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body class="pos-relative">
+    <section class="center pos-absolute">
+        <div class="center_box pos-relative">
+            <div class="close pos-absolute Flex Justify-center Align-center" id="close">
+                <img src="img/Vector.svg" alt="svg">
+            </div>
+            <h2 class="bpg-nino">საწვავი</h2>
+            <div class="Flex Justify-center p_flex">
+                <p class="bpg-nino">ლიდერი დამოუკიდებელ ბენზინგასამართ სადგურებს შორის.
+                    უმაღლესი მეხუთე ეკოლოგიური კლასის სწავავი</p>
+            </div>
+            <div class="hr_box">
+                <span class="hr_span"></span>
+            </div>
+            <article>
+                <div class="article_p">
+                    <p class="bpg-nino">მიუთითეთ საწვავის რაოდენობა</p>
+                </div>
+                <div class="Flex Align-center">
+                    <div class="left_info Flex Justify-center Align-center">
+                        <span>00.00L</span>
+                    </div>
+                    <!--slider-->
+                    <div class="slider">
+                        <input type="range" min="0" max="100" value="50" id="slider">
+                        <div id="selector"></div>
+                        <div id="bar"></div>
+                    </div>
+                    <div class="right_info Flex Justify-center Align-center">
+                        <span>00.00L</span>
+                    </div>
+                </div>
+            </article>
+            <h4 class="bpg-nino money-h4">სულ გადასახდელი: <span>$1500000</span></h4>
+            <div class="money Flex Justify-center">
+                <div class="label_box Flex ">
+                    <label class="container_radio bpg-nino" for="radio1">
+                        <input type="radio" name="radio" id="radio1" class="radio__input">
+                        <div class="radio-radio"></div>
+                        ქეშით გადახდა
+                    </label>
+                    <!--2-->
+                    <label class="container_radio bpg-nino" for="radio2">
+                        <input type="radio" name="radio" id="radio2" class="radio__input">
+                        <div class="radio-radio"></div>
+                        ბარათით გადახდა
+                    </label>
+                </div>
+            </div>
+            <div class="Flex Justify-center">
+                <button class="submit_button bpg-nino" id="buy_button">გადახდა</button>
+            </div>
+            <div class="two_button Justify-center Flex">
+                <button class="last-button bpg-nino" id="lbtn1">ავზის სრულად გავსება</button>
+                <button class="last-button bpg-nino" id="lbtn2">სახ. ტრანსპორტი</button>
+            </div>
+        </div>
+    </section>
+    <script src="JavaScript/slider.js"></script>
+</body>
+</html>

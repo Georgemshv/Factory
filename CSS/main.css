@@ -1,0 +1,59 @@
+/*Frequently used class*/
+.Flex{
+    display: -webkit-box; 
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; 
+    display: flex;
+}
+.Justify-center{
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.Align-center{
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.Flex-column{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.Justify-between{
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.wrap{
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+/*position */
+.pos-relative{
+    position: relative;
+}
+.pos-absolute{
+    position: absolute;
+}
+/*Yellow wallpaper*/
+.yellow_bg{
+    background-color: #FFCC00;
+}
+/*Animation*/
+.transition_04s{
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.transition_03s{
+    transition: all 0.3s;
+}
+.none{
+    display: none;
+}
+.blur{
+    -webkit-filter: blur(36px);
+            filter: blur(36px);
+}

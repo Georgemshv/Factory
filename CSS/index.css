@@ -1,0 +1,304 @@
+html , body{
+    height: 100%;
+    background-color: rgb(55, 56, 55);
+}
+.center{
+    background: -o-radial-gradient(50% 50%, 50% 50%, #2B3A51 0%, #141E2C 100%);
+    background: radial-gradient(50% 50% at 50% 50%, #2B3A51 0%, #141E2C 100%);
+    border-radius: 14px;
+    width: 739px;
+    height: 640px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50% ,-50%);
+        -ms-transform: translate(-50% ,-50%);
+            transform: translate(-50% ,-50%);
+}
+.center_box {
+    height: 100%;
+    width: 100%;
+}
+.close{
+    border-radius: 3px;
+    height: 20px;
+    width: 20px;
+    background-color: rgba(255, 255, 255, 0.158);
+    top: 16px;
+    right: 16px;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.close:hover{
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+.center_box h2{
+    font-weight: bold;
+    color:  #FAFF00;
+    font-size: 35px;
+    padding-top: 50px;
+    text-align: center;
+}
+.p_flex{
+    padding-top: 8px;
+}
+.p_flex p{
+    text-align: center;
+    line-height: 19px;
+    opacity: 0.4;
+    color: white;
+    max-width: 515px;
+    font-size: 18px;
+}
+.hr_box{
+    padding: 0 33px;
+    padding-top: 50px;
+}
+.hr_span{
+    display: block;
+    height: 1px;
+    background-color: white;
+    opacity: 0.1;
+}
+article{
+    padding: 0px 64px;
+    padding-top: 47px;
+}
+.article_p{
+    margin-bottom: 16px;
+}
+.article_p p{
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+}
+.left_info , .right_info{
+    background: rgba(255, 255, 255, 0.07);
+    -webkit-box-shadow: inset 0px 0px 3.17647px 1.58824px rgba(30, 41, 57, 0.6);
+            box-shadow: inset 0px 0px 3.17647px 1.58824px rgba(30, 41, 57, 0.6);
+    border-radius: 3.17647px;
+    width: 81px;
+    height: 29px;
+    font-size: 22px;
+}
+.left_info span , .right_info span{
+    color: white;
+    opacity: 0.2;
+}
+.slider{
+    max-width: 423px;
+    width: 100%;
+    margin: 6px 20px 0px 10px;
+}
+#slider{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 7px;
+    outline: none;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.04);
+}
+#slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    z-index: 10;
+    position: relative;
+}
+#selector{
+    width: 19px;
+    height: 19px;
+    background: #FAFF00;
+    margin-top: -15px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.53);
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.53);
+}
+#bar{
+    width: 0%;
+    height: 7px;
+    background-color: #FAFF00;
+    border-radius: 2px;
+    -webkit-transform: translateY(-13px);
+        -ms-transform: translateY(-13px);
+            transform: translateY(-13px);
+}
+.money-h4{
+    margin-top: 67px;
+    text-align: center;
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+}
+.money-h4 span{
+    color: #FAFF00;
+}
+.container_radio{
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 9px;
+    color: white;
+}
+.radio__input{
+    display: none;
+}
+.radio-radio{
+    width: 11px;
+    height: 11px;
+    border: solid 0.8px white;
+    border-radius: 50%;
+    margin-right: 4px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.radio-radio::after{
+    content: " ";
+    width: 7.17px;
+    height: 7.17px;
+    background-color: #FAFF00;
+    border-radius: 50%;
+    display: block;
+    -webkit-transition: -webkit-transform 0.25s;
+    transition: -webkit-transform 0.25s;
+    -o-transition: transform 0.25s;
+    transition: transform 0.25s;
+    transition: transform 0.25s, -webkit-transform 0.25s;
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+}
+.radio__input:checked + .radio-radio::after{
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+}
+.container_radio:last-child{
+    margin-left: 18px;
+}
+.label_box{
+    margin-top: 6px;
+}
+.submit_button{
+    background: #FAFF00;
+border-radius: 8.65517px;
+width: 251px;
+height: 50.69px;
+font-size: 19px;
+margin-top: 18px;
+-webkit-transition: all 0.4s;
+-o-transition: all 0.4s;
+transition: all 0.4s;
+}
+.submit_button:hover{
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    background: white;
+}
+.two_button{
+    padding-top: 88px;
+}
+.two_button button{
+    width: 251px;
+    height: 50px;
+    font-size: 19px;
+    border-radius: 8.65517px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.two_button button:hover{
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+    background: #FAFF00;
+}
+.two_button button:last-child{
+    margin-left: 32px;
+}
+/*responsive*/
+@media(max-width: 1366px){
+    .two_button{
+        padding-top: 40px;
+    }
+    .money-h4{
+        margin-top: 26px;
+    }
+    .center{
+        width: 660px;
+        height: 575px;
+    }
+}
+@media(max-width: 1280px){
+    .center{
+        height: 465px;
+        width: 590px;
+    }
+    #slider , #bar{
+        height: 5px;
+    }
+    .submit_button , .two_button button{
+        width: 180px;
+        height: 34.69px;
+        font-size: 16px;
+    }
+    .two_button button{
+        font-size: 14px;
+    }
+    .left_info span, .right_info span{
+        font-size: 14px;
+    }
+    article{
+        padding-top: 27px;
+    }
+    .center_box h2{
+        font-size: 29px;
+        padding-top: 30px;
+    }
+.p_flex p{
+    font-size: 16px;
+}
+.hr_box{
+    padding-top: 30px;
+}
+}
+@media(max-width: 1024px){
+    .center{
+        width: 500px;
+        height: 435px;
+    }
+    .center_box h2{
+        font-size: 24px;
+        padding-top: 20px;
+    }
+    .p_flex p{
+        font-size: 12px
+    }
+    .hr_box{
+        padding-top: 19px;
+    }
+    article{
+        padding-top: 16px;
+    }
+    .article_p p{
+        font-size: 13px;
+    }
+    .money-h4{
+        margin-top: 15px;
+        font-size: 14px;
+    }
+}
